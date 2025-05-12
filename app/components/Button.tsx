@@ -1,7 +1,14 @@
 import Link from 'next/link';
 import React from 'react'
 
-const Button = ({theme, children, className, href}) => {
+interface ButtonProps {
+  theme?: 'primary' | 'secondary' | string
+  children: React.ReactNode
+  className?: string
+  href?: string
+}
+
+const Button = ({theme, children, className, href}: ButtonProps) => {
     const baseClasse = "text-white hover:text-white"
     const themeClasses = 
     theme === "primary" ? "bg-[#0059F7] hover:bg-[#689EFF]" 
@@ -15,7 +22,7 @@ const Button = ({theme, children, className, href}) => {
     )
 
     const renderLink = () => (
-        <Link href={href}
+        <Link href={href as string}
         className={`font-sora text-xs sm:text-sm lg:text-base font-normal tracking-wider animate px-4 py-2 rounded-lg lg:py-4 lg:px-6 ${baseClasse} ${themeClasses} ${className}`}
         >
             {children}
