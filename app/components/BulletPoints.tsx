@@ -8,6 +8,8 @@ import Image from 'next/image'
 const BulletPoints = () => {
   return (
     <>
+    <div className="bg-[#070E27]">
+
     <Headings title="foxart" subtitle="How does it work?" />
     <Container className="bg-[#070E27] text-white">
       <div 
@@ -41,6 +43,7 @@ const BulletPoints = () => {
         ))}
       </div>
     </Container>
+    </div>
     </>
   )
 }
