@@ -1,4 +1,4 @@
-# Une Landing Page Modern avec React, Next & Tailwind CSS !
+# Landing Page Modern avec React, Next & Tailwind CSS !
 
 Bienvenue dans ce projet qui te guide pas à pas pour créer une landing page professionnelle dédiée à un service SaaS, en seulement 2 heures ! Grâce à React pour une interface dynamique et Tailwind CSS pour un design moderne et responsive, tu vas apprendre à :
 
